@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex nav</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+     
+    
+    .first{
+        color: white;
+        list-style: none;
+        display: inline;
+    }
+    .two{
+        color: white;
+       
+    
+    }
+    li{
+        list-style: none;
+        display: inline;
+        padding: 0px 20px;
+    }
+    ul{
+        padding: 20px;
+    }
+    .box1{
+       background-color: aqua;
+       height: 50vh;
+       width:40% ;
+       display: inline-block;
+       z-index: 1;
+       position: relative;
+       
+      
+    }
+    .box2{
+       background-color: aqua;
+       height: 50vh;
+       width:40% ;
+       display: inline-block;
+       z-index: 1;
+       position: relative;
+      
+       
+    }
+    .flex{
+        display: flex;
+        justify-content: space-between;
+        background-color: orange;
+        min-height: 5550px;
+        /* position: relative;
+        z-index: 1; */
+    }
+    .con{
+        display: flex;
+        background-color: black;
+        height: 60px;
+        justify-content: space-between;
+        position: sticky;
+        z-index: 5;
+       
+       
+    }
+</style>
+<body>
+    <header>
+    <nav class="con">
+        <div class="first">
+            <ul>
+                <li>
+                    make my trip
+                </li>
+            </ul>
+
+        </div>
+        <div class="two">
+            <ul>
+                <li>home</li>
+                <li>about</li>
+                <li>contact</li>
+            </ul>
+        </div>
+    </nav>
+</header>
+    <div class="flex">
+    <div class="box1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam unde voluptatem quo ipsam pariatur similique adipisci molestias. Nisi ipsa sed sequi repudiandae illum possimus voluptates in dolore, facilis doloremque laudantium nemo saepe dolorem ut earum quia, aliquam obcaecati fuga, eum itaque. Cupiditate quo magnam inventore optio eaque sit, repellendus similique.</div>
+    <div class="box2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam unde voluptatem quo ipsam pariatur similique adipisci molestias. Nisi ipsa sed sequi repudiandae illum possimus voluptates in dolore, facilis doloremque laudantium nemo saepe dolorem ut earum quia, aliquam obcaecati fuga, eum itaque. Cupiditate quo magnam inventore optio eaque sit, repellendus similique.</div>
+    </div>
+        
+</body>
+</html>

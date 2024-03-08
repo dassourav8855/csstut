@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+</head>
+<style>
+    .con {
+        display: flex;
+        height: 100vh;
+        background-color: aqua;
+        justify-content: flex-start;
+        /* align-items: center; */
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    .box1{
+        height: 200px;
+        width: 200px;
+        background-color: blue;
+border:2px solid black;
+order: 2;
+/* align-self: flex-end; */
+flex-grow: 2;
+
+    }
+    .box2{
+        height: 200px;
+        width: 200px;
+        background-color: rgb(255, 0, 0);
+        border:2px solid black;
+        /* flex-grow: 0; */
+    }
+.pet{
+    width: 50px;
+     height: 90px;
+     
+}
+    
+</style>
+<body>
+    <div class="con">
+        <div class="box1">box 1</div>
+        <div class="box2">box 2</div>
+        <div class="box2">box3</div>
+        <div class="box2">box4</div>
+    </div>
+   <canvas class="pet"></canvas>
+</body>
+</html>
